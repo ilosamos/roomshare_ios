@@ -34,6 +34,7 @@
 		4CD52D841E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
 		4CD52D851E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
 		4CD52D861E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
+		4CE1D7F71E98319F002F1C63 /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1D7F61E98319F002F1C63 /* FirebaseTests.swift */; };
 		A572CAEB6D2FDB1C0F9AB4D1 /* Pods_roomshareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02B57FBEB829D8C349AD4F5 /* Pods_roomshareTests.framework */; };
 		D65664ED975C52B8C1C137FB /* Pods_roomshareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */; };
 		E0DE537C7BCD79A334FF90AF /* Pods_roomshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */; };
@@ -82,6 +83,7 @@
 		4CD52D771E7DACE50064C13E /* roomshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = roomshare.entitlements; sourceTree = "<group>"; };
 		4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTest.swift; sourceTree = "<group>"; };
 		4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CE1D7F61E98319F002F1C63 /* FirebaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTests.swift; sourceTree = "<group>"; };
 		4D3BF58694AAC9EF721E122F /* Pods-roomshareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareTests/Pods-roomshareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D12F8B33296E16AE366EEC2 /* Pods-roomshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomshare/Pods-roomshare.release.xcconfig"; sourceTree = "<group>"; };
 		86EDE5DBBF503DD5ED43E0EC /* Pods-roomshareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareUITests/Pods-roomshareUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				4C89A13E1E789B98005F45AA /* roomshareTests.swift */,
 				4C89A1401E789B98005F45AA /* Info.plist */,
 				4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */,
+				4CE1D7F61E98319F002F1C63 /* FirebaseTests.swift */,
 			);
 			path = roomshareTests;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			files = (
 				4C08E3961E81D1CB00679B4E /* Utility.swift in Sources */,
 				4C89A1611E79E878005F45AA /* StatusLabel.swift in Sources */,
+				4CE1D7F71E98319F002F1C63 /* FirebaseTests.swift in Sources */,
 				4C89A13F1E789B98005F45AA /* roomshareTests.swift in Sources */,
 				4C89A15D1E79E113005F45AA /* SwitchButton.swift in Sources */,
 				4CD52D7D1E7E131A0064C13E /* FirstViewControllerTest.swift in Sources */,
