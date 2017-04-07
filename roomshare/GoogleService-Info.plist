@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>771983693192-6fcs734dk1ejbiiat4rn624eb4bc4lj6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.771983693192-6fcs734dk1ejbiiat4rn624eb4bc4lj6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCrX-uJhJwj5UkA5V0jKmUzv9epGsZgkWI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>771983693192</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.berger.roomshare.roomshare</string>
+	<key>PROJECT_ID</key>
+	<string>roomshare-2d4da</string>
+	<key>STORAGE_BUCKET</key>
+	<string>roomshare-2d4da.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:771983693192:ios:7ce47835fd3b9028</string>
+	<key>DATABASE_URL</key>
+	<string>https://roomshare-2d4da.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C08E3951E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
+		4C08E3961E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
+		4C08E3971E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
+		4C89A1281E789B98005F45AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1271E789B98005F45AA /* AppDelegate.swift */; };
+		4C89A12A1E789B98005F45AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1291E789B98005F45AA /* FirstViewController.swift */; };
+		4C89A12C1E789B98005F45AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A12B1E789B98005F45AA /* SecondViewController.swift */; };
+		4C89A12F1E789B98005F45AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89A12D1E789B98005F45AA /* Main.storyboard */; };
+		4C89A1311E789B98005F45AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C89A1301E789B98005F45AA /* Assets.xcassets */; };
+		4C89A1341E789B98005F45AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89A1321E789B98005F45AA /* LaunchScreen.storyboard */; };
+		4C89A13F1E789B98005F45AA /* roomshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A13E1E789B98005F45AA /* roomshareTests.swift */; };
+		4C89A14A1E789B98005F45AA /* roomshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1491E789B98005F45AA /* roomshareUITests.swift */; };
+		4C89A1581E78A23B005F45AA /* StatusImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1571E78A23B005F45AA /* StatusImage.swift */; };
+		4C89A1591E78A23B005F45AA /* StatusImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1571E78A23B005F45AA /* StatusImage.swift */; };
+		4C89A15A1E78A23B005F45AA /* StatusImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1571E78A23B005F45AA /* StatusImage.swift */; };
+		4C89A15C1E79E113005F45AA /* SwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A15B1E79E113005F45AA /* SwitchButton.swift */; };
+		4C89A15D1E79E113005F45AA /* SwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A15B1E79E113005F45AA /* SwitchButton.swift */; };
+		4C89A15E1E79E113005F45AA /* SwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A15B1E79E113005F45AA /* SwitchButton.swift */; };
+		4C89A1601E79E878005F45AA /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A15F1E79E878005F45AA /* StatusLabel.swift */; };
+		4C89A1611E79E878005F45AA /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A15F1E79E878005F45AA /* StatusLabel.swift */; };
+		4C89A1621E79E878005F45AA /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A15F1E79E878005F45AA /* StatusLabel.swift */; };
+		4C89A1651E79E9B8005F45AA /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */; };
+		4C89A1661E79E9B8005F45AA /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */; };
+		4C89A1671E79E9B8005F45AA /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */; };
+		4CD52D7D1E7E131A0064C13E /* FirstViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */; };
+		4CD52D841E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
+		4CD52D851E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
+		4CD52D861E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
+		A572CAEB6D2FDB1C0F9AB4D1 /* Pods_roomshareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02B57FBEB829D8C349AD4F5 /* Pods_roomshareTests.framework */; };
+		D65664ED975C52B8C1C137FB /* Pods_roomshareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */; };
+		E0DE537C7BCD79A334FF90AF /* Pods_roomshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C89A13B1E789B98005F45AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C89A11C1E789B98005F45AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C89A1231E789B98005F45AA;
+			remoteInfo = roomshare;
+		};
+		4C89A1461E789B98005F45AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C89A11C1E789B98005F45AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C89A1231E789B98005F45AA;
+			remoteInfo = roomshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomshareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48074C86D2297C2B561FCB7B /* Pods-roomshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshare/Pods-roomshare.debug.xcconfig"; sourceTree = "<group>"; };
+		4C08E3941E81D1CB00679B4E /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4C89A1241E789B98005F45AA /* roomshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C89A1271E789B98005F45AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C89A1291E789B98005F45AA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4C89A12B1E789B98005F45AA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4C89A12E1E789B98005F45AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C89A1301E789B98005F45AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C89A1331E789B98005F45AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C89A1351E789B98005F45AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C89A13A1E789B98005F45AA /* roomshareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roomshareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C89A13E1E789B98005F45AA /* roomshareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomshareTests.swift; sourceTree = "<group>"; };
+		4C89A1401E789B98005F45AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C89A1451E789B98005F45AA /* roomshareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roomshareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C89A1491E789B98005F45AA /* roomshareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomshareUITests.swift; sourceTree = "<group>"; };
+		4C89A14B1E789B98005F45AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C89A1571E78A23B005F45AA /* StatusImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusImage.swift; sourceTree = "<group>"; };
+		4C89A15B1E79E113005F45AA /* SwitchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchButton.swift; sourceTree = "<group>"; };
+		4C89A15F1E79E878005F45AA /* StatusLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		4C89A1641E79E9B8005F45AA /* db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db.xcdatamodel; sourceTree = "<group>"; };
+		4CD52D771E7DACE50064C13E /* roomshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = roomshare.entitlements; sourceTree = "<group>"; };
+		4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTest.swift; sourceTree = "<group>"; };
+		4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D3BF58694AAC9EF721E122F /* Pods-roomshareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareTests/Pods-roomshareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D12F8B33296E16AE366EEC2 /* Pods-roomshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomshare/Pods-roomshare.release.xcconfig"; sourceTree = "<group>"; };
+		86EDE5DBBF503DD5ED43E0EC /* Pods-roomshareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareUITests/Pods-roomshareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B02B57FBEB829D8C349AD4F5 /* Pods_roomshareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomshareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6BDA310D129AA48FBF4489 /* Pods-roomshareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareTests/Pods-roomshareTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB6661525237449CCA76E078 /* Pods-roomshareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareUITests/Pods-roomshareUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C89A1211E789B98005F45AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DE537C7BCD79A334FF90AF /* Pods_roomshare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C89A1371E789B98005F45AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A572CAEB6D2FDB1C0F9AB4D1 /* Pods_roomshareTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C89A1421E789B98005F45AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65664ED975C52B8C1C137FB /* Pods_roomshareUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C89A11B1E789B98005F45AA = {
+			isa = PBXGroup;
+			children = (
+				4C89A1261E789B98005F45AA /* roomshare */,
+				4C89A13D1E789B98005F45AA /* roomshareTests */,
+				4C89A1481E789B98005F45AA /* roomshareUITests */,
+				4C89A1251E789B98005F45AA /* Products */,
+				ED31E9428101FE1E141239FB /* Pods */,
+				A3BDE82A1AE70465AAE4B821 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C89A1251E789B98005F45AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C89A1241E789B98005F45AA /* roomshare.app */,
+				4C89A13A1E789B98005F45AA /* roomshareTests.xctest */,
+				4C89A1451E789B98005F45AA /* roomshareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C89A1261E789B98005F45AA /* roomshare */ = {
+			isa = PBXGroup;
+			children = (
+				4CD52D771E7DACE50064C13E /* roomshare.entitlements */,
+				4C89A1271E789B98005F45AA /* AppDelegate.swift */,
+				4C89A1291E789B98005F45AA /* FirstViewController.swift */,
+				4C89A12B1E789B98005F45AA /* SecondViewController.swift */,
+				4C08E3941E81D1CB00679B4E /* Utility.swift */,
+				4CE1D7F51E982C92002F1C63 /* CustomUI */,
+				4C89A12D1E789B98005F45AA /* Main.storyboard */,
+				4C89A1321E789B98005F45AA /* LaunchScreen.storyboard */,
+				4C89A1351E789B98005F45AA /* Info.plist */,
+				4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */,
+				4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */,
+				4C89A1301E789B98005F45AA /* Assets.xcassets */,
+			);
+			path = roomshare;
+			sourceTree = "<group>";
+		};
+		4C89A13D1E789B98005F45AA /* roomshareTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C89A13E1E789B98005F45AA /* roomshareTests.swift */,
+				4C89A1401E789B98005F45AA /* Info.plist */,
+				4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */,
+			);
+			path = roomshareTests;
+			sourceTree = "<group>";
+		};
+		4C89A1481E789B98005F45AA /* roomshareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C89A1491E789B98005F45AA /* roomshareUITests.swift */,
+				4C89A14B1E789B98005F45AA /* Info.plist */,
+			);
+			path = roomshareUITests;
+			sourceTree = "<group>";
+		};
+		4CE1D7F51E982C92002F1C63 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				4C89A15F1E79E878005F45AA /* StatusLabel.swift */,
+				4C89A1571E78A23B005F45AA /* StatusImage.swift */,
+				4C89A15B1E79E113005F45AA /* SwitchButton.swift */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		A3BDE82A1AE70465AAE4B821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */,
+				B02B57FBEB829D8C349AD4F5 /* Pods_roomshareTests.framework */,
+				12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED31E9428101FE1E141239FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48074C86D2297C2B561FCB7B /* Pods-roomshare.debug.xcconfig */,
+				7D12F8B33296E16AE366EEC2 /* Pods-roomshare.release.xcconfig */,
+				4D3BF58694AAC9EF721E122F /* Pods-roomshareTests.debug.xcconfig */,
+				CF6BDA310D129AA48FBF4489 /* Pods-roomshareTests.release.xcconfig */,
+				86EDE5DBBF503DD5ED43E0EC /* Pods-roomshareUITests.debug.xcconfig */,
+				DB6661525237449CCA76E078 /* Pods-roomshareUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C89A1231E789B98005F45AA /* roomshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C89A14E1E789B98005F45AA /* Build configuration list for PBXNativeTarget "roomshare" */;
+			buildPhases = (
+				A2BEFFB53F7DA402DE689014 /* [CP] Check Pods Manifest.lock */,
+				4C89A1201E789B98005F45AA /* Sources */,
+				4C89A1211E789B98005F45AA /* Frameworks */,
+				4C89A1221E789B98005F45AA /* Resources */,
+				8900F4A1DECAAEF68BFFD4FD /* [CP] Embed Pods Frameworks */,
+				959D19091B3BF5B325D85AB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = roomshare;
+			productName = roomshare;
+			productReference = 4C89A1241E789B98005F45AA /* roomshare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C89A1391E789B98005F45AA /* roomshareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C89A1511E789B98005F45AA /* Build configuration list for PBXNativeTarget "roomshareTests" */;
+			buildPhases = (
+				91CDC2DBADFB0671BB9FFA65 /* [CP] Check Pods Manifest.lock */,
+				4C89A1361E789B98005F45AA /* Sources */,
+				4C89A1371E789B98005F45AA /* Frameworks */,
+				4C89A1381E789B98005F45AA /* Resources */,
+				A1D929A5E2491AF643EB8655 /* [CP] Embed Pods Frameworks */,
+				8AB460DE51FED27BD5A5BCCB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C89A13C1E789B98005F45AA /* PBXTargetDependency */,
+			);
+			name = roomshareTests;
+			productName = roomshareTests;
+			productReference = 4C89A13A1E789B98005F45AA /* roomshareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C89A1441E789B98005F45AA /* roomshareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C89A1541E789B98005F45AA /* Build configuration list for PBXNativeTarget "roomshareUITests" */;
+			buildPhases = (
+				E6CEBB0B2E7FA9340421BDA5 /* [CP] Check Pods Manifest.lock */,
+				4C89A1411E789B98005F45AA /* Sources */,
+				4C89A1421E789B98005F45AA /* Frameworks */,
+				4C89A1431E789B98005F45AA /* Resources */,
+				9970984EC1F5B7B60E426DBB /* [CP] Embed Pods Frameworks */,
+				296373DA9B028E12DE8F73B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C89A1471E789B98005F45AA /* PBXTargetDependency */,
+			);
+			name = roomshareUITests;
+			productName = roomshareUITests;
+			productReference = 4C89A1451E789B98005F45AA /* roomshareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C89A11C1E789B98005F45AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Daniel Berger";
+				TargetAttributes = {
+					4C89A1231E789B98005F45AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DCR3LB83K6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					4C89A1391E789B98005F45AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C89A1231E789B98005F45AA;
+					};
+					4C89A1441E789B98005F45AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C89A1231E789B98005F45AA;
+					};
+				};
+			};
+			buildConfigurationList = 4C89A11F1E789B98005F45AA /* Build configuration list for PBXProject "roomshare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C89A11B1E789B98005F45AA;
+			productRefGroup = 4C89A1251E789B98005F45AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C89A1231E789B98005F45AA /* roomshare */,
+				4C89A1391E789B98005F45AA /* roomshareTests */,
+				4C89A1441E789B98005F45AA /* roomshareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C89A1221E789B98005F45AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C89A1341E789B98005F45AA /* LaunchScreen.storyboard in Resources */,
+				4CD52D841E7ED7B30064C13E /* GoogleService-Info.plist in Resources */,
+				4C89A1311E789B98005F45AA /* Assets.xcassets in Resources */,
+				4C89A12F1E789B98005F45AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C89A1381E789B98005F45AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD52D851E7ED7B30064C13E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C89A1431E789B98005F45AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD52D861E7ED7B30064C13E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		296373DA9B028E12DE8F73B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomshareUITests/Pods-roomshareUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8900F4A1DECAAEF68BFFD4FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomshare/Pods-roomshare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB460DE51FED27BD5A5BCCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomshareTests/Pods-roomshareTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91CDC2DBADFB0671BB9FFA65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		959D19091B3BF5B325D85AB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomshare/Pods-roomshare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9970984EC1F5B7B60E426DBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomshareUITests/Pods-roomshareUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D929A5E2491AF643EB8655 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomshareTests/Pods-roomshareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2BEFFB53F7DA402DE689014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6CEBB0B2E7FA9340421BDA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C89A1201E789B98005F45AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C89A12C1E789B98005F45AA /* SecondViewController.swift in Sources */,
+				4C89A15C1E79E113005F45AA /* SwitchButton.swift in Sources */,
+				4C89A1281E789B98005F45AA /* AppDelegate.swift in Sources */,
+				4C89A1651E79E9B8005F45AA /* db.xcdatamodeld in Sources */,
+				4C08E3951E81D1CB00679B4E /* Utility.swift in Sources */,
+				4C89A12A1E789B98005F45AA /* FirstViewController.swift in Sources */,
+				4C89A1601E79E878005F45AA /* StatusLabel.swift in Sources */,
+				4C89A1581E78A23B005F45AA /* StatusImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C89A1361E789B98005F45AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C08E3961E81D1CB00679B4E /* Utility.swift in Sources */,
+				4C89A1611E79E878005F45AA /* StatusLabel.swift in Sources */,
+				4C89A13F1E789B98005F45AA /* roomshareTests.swift in Sources */,
+				4C89A15D1E79E113005F45AA /* SwitchButton.swift in Sources */,
+				4CD52D7D1E7E131A0064C13E /* FirstViewControllerTest.swift in Sources */,
+				4C89A1591E78A23B005F45AA /* StatusImage.swift in Sources */,
+				4C89A1661E79E9B8005F45AA /* db.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C89A1411E789B98005F45AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C89A1621E79E878005F45AA /* StatusLabel.swift in Sources */,
+				4C89A14A1E789B98005F45AA /* roomshareUITests.swift in Sources */,
+				4C08E3971E81D1CB00679B4E /* Utility.swift in Sources */,
+				4C89A15E1E79E113005F45AA /* SwitchButton.swift in Sources */,
+				4C89A15A1E78A23B005F45AA /* StatusImage.swift in Sources */,
+				4C89A1671E79E9B8005F45AA /* db.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C89A13C1E789B98005F45AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C89A1231E789B98005F45AA /* roomshare */;
+			targetProxy = 4C89A13B1E789B98005F45AA /* PBXContainerItemProxy */;
+		};
+		4C89A1471E789B98005F45AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C89A1231E789B98005F45AA /* roomshare */;
+			targetProxy = 4C89A1461E789B98005F45AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C89A12D1E789B98005F45AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C89A12E1E789B98005F45AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C89A1321E789B98005F45AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C89A1331E789B98005F45AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C89A14C1E789B98005F45AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C89A14D1E789B98005F45AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C89A14F1E789B98005F45AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48074C86D2297C2B561FCB7B /* Pods-roomshare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = roomshare/roomshare.entitlements;
+				DEVELOPMENT_TEAM = DCR3LB83K6;
+				INFOPLIST_FILE = roomshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C89A1501E789B98005F45AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D12F8B33296E16AE366EEC2 /* Pods-roomshare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = roomshare/roomshare.entitlements;
+				DEVELOPMENT_TEAM = DCR3LB83K6;
+				INFOPLIST_FILE = roomshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C89A1521E789B98005F45AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3BF58694AAC9EF721E122F /* Pods-roomshareTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = roomshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roomshare.app/roomshare";
+			};
+			name = Debug;
+		};
+		4C89A1531E789B98005F45AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF6BDA310D129AA48FBF4489 /* Pods-roomshareTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = roomshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roomshare.app/roomshare";
+			};
+			name = Release;
+		};
+		4C89A1551E789B98005F45AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EDE5DBBF503DD5ED43E0EC /* Pods-roomshareUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = roomshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = roomshare;
+			};
+			name = Debug;
+		};
+		4C89A1561E789B98005F45AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6661525237449CCA76E078 /* Pods-roomshareUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = roomshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = roomshare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C89A11F1E789B98005F45AA /* Build configuration list for PBXProject "roomshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C89A14C1E789B98005F45AA /* Debug */,
+				4C89A14D1E789B98005F45AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C89A14E1E789B98005F45AA /* Build configuration list for PBXNativeTarget "roomshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C89A14F1E789B98005F45AA /* Debug */,
+				4C89A1501E789B98005F45AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C89A1511E789B98005F45AA /* Build configuration list for PBXNativeTarget "roomshareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C89A1521E789B98005F45AA /* Debug */,
+				4C89A1531E789B98005F45AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C89A1541E789B98005F45AA /* Build configuration list for PBXNativeTarget "roomshareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C89A1551E789B98005F45AA /* Debug */,
+				4C89A1561E789B98005F45AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C89A1641E79E9B8005F45AA /* db.xcdatamodel */,
+			);
+			currentVersion = 4C89A1641E79E9B8005F45AA /* db.xcdatamodel */;
+			path = db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C89A11C1E789B98005F45AA /* Project object */;
+}
