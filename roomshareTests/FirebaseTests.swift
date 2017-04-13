@@ -11,12 +11,13 @@ import XCTest
 import Firebase
 
 class FirebaseTests: XCTestCase {
+  let firstViewController = FirstViewController()
   
   override func setUp() {
     super.setUp()
-    continueAfterFailure = false
-    //XCUIApplication().launch()
     FIRApp.configure()
+    continueAfterFailure = false
+    XCUIApplication().launch()
   }
   
   override func tearDown() {
@@ -33,4 +34,7 @@ class FirebaseTests: XCTestCase {
     });
   }
   
+  func testStatusChanged() {
+    
+  }
 }

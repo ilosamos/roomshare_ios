@@ -10,16 +10,24 @@ import Foundation
 import UIKit
 
 class StatusImage : UIImageView {
-    var roomStatus : RoomStatus = RoomStatus.Free {
-        didSet {
-            if roomStatus == RoomStatus.Free {
-                self.image = #imageLiteral(resourceName: "free")
-            }
-            else {
-                self.image = #imageLiteral(resourceName: "full")
-            }
-        }
+  var roomStatus : RoomStatus = .Free {
+    didSet {
+      animateSwitch()
+      if roomStatus == .Free {
+        self.image = #imageLiteral(resourceName: "free")
+      }
+      else {
+        self.image = #imageLiteral(resourceName: "full")
+      }
     }
+  }
+  func animateSwitch() {
+    self.transform = CGAffineTransform(scaleX: 1.15, y: 1.30)
+    
+    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.37, initialSpringVelocity: 0, options: [], animations: {
+      self.transform = .identity
+    }, completion: nil)
+  }
 }
 
 

@@ -8,8 +8,8 @@
 
 import UIKit
 
-//Wrapper for alert messages
 class Utility {
+  // Shows simple alert Message with OK Button
   class func showAlertMessage(title: String, message: String,_ vc: UIViewController) {
     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
     
@@ -18,6 +18,23 @@ class Utility {
     DispatchQueue.main.async {
       vc.present(alert, animated: true, completion: nil)
     }
+  }
+  
+  // Fades in all views in order of the views in the given array
+  class func fadeInViews(_ views: [UIView], index: Int = 0) {
+    guard index < views.count else {
+      return
+    }
+    UIView.animate(withDuration: 0.05, animations: {
+      views[index].alpha = 1
+    }) { (true) in
+      Utility.fadeInViews(views, index: index + 1)
+    }
+  }
+  
+  // Overload for fade in views with variadic parameters
+  class func fadeInViews(_ views: UIView...) {
+    Utility.fadeInViews(views)
   }
 }
 

@@ -10,6 +10,10 @@
 		4C08E3951E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
 		4C08E3961E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
 		4C08E3971E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
+		4C1A12EC1E98E267007C24BB /* FirstViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A12EB1E98E267007C24BB /* FirstViewControllerTest.swift */; };
+		4C2AD2541E9EDD5E00A66711 /* UIViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2AD2531E9EDD5E00A66711 /* UIViewControllerB.swift */; };
+		4C738FE61E9EB842006A2988 /* UIButtonB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C738FE51E9EB842006A2988 /* UIButtonB.swift */; };
+		4C738FE91E9EBFE7006A2988 /* UITextFieldB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C738FE81E9EBFE7006A2988 /* UITextFieldB.swift */; };
 		4C89A1281E789B98005F45AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1271E789B98005F45AA /* AppDelegate.swift */; };
 		4C89A12A1E789B98005F45AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1291E789B98005F45AA /* FirstViewController.swift */; };
 		4C89A12C1E789B98005F45AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A12B1E789B98005F45AA /* SecondViewController.swift */; };
@@ -30,11 +34,14 @@
 		4C89A1651E79E9B8005F45AA /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */; };
 		4C89A1661E79E9B8005F45AA /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */; };
 		4C89A1671E79E9B8005F45AA /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1631E79E9B8005F45AA /* db.xcdatamodeld */; };
-		4CD52D7D1E7E131A0064C13E /* FirstViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */; };
 		4CD52D841E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
 		4CD52D851E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
 		4CD52D861E7ED7B30064C13E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */; };
 		4CE1D7F71E98319F002F1C63 /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1D7F61E98319F002F1C63 /* FirebaseTests.swift */; };
+		4CE600CD1E9D655B0019A6F4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE600CC1E9D655B0019A6F4 /* TodayViewController.swift */; };
+		4CE600D01E9D655B0019A6F4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE600CE1E9D655B0019A6F4 /* MainInterface.storyboard */; };
+		4CE600D41E9D655B0019A6F4 /* roomShareWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4CE600C81E9D655B0019A6F4 /* roomShareWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4CE600DA1E9D67660019A6F4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE600C91E9D655B0019A6F4 /* NotificationCenter.framework */; };
 		A572CAEB6D2FDB1C0F9AB4D1 /* Pods_roomshareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02B57FBEB829D8C349AD4F5 /* Pods_roomshareTests.framework */; };
 		D65664ED975C52B8C1C137FB /* Pods_roomshareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */; };
 		E0DE537C7BCD79A334FF90AF /* Pods_roomshare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */; };
@@ -55,13 +62,39 @@
 			remoteGlobalIDString = 4C89A1231E789B98005F45AA;
 			remoteInfo = roomshare;
 		};
+		4CE600D21E9D655B0019A6F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C89A11C1E789B98005F45AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CE600C71E9D655B0019A6F4;
+			remoteInfo = roomShareWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CE600D81E9D655B0019A6F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4CE600D41E9D655B0019A6F4 /* roomShareWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomshareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomshare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48074C86D2297C2B561FCB7B /* Pods-roomshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshare/Pods-roomshare.debug.xcconfig"; sourceTree = "<group>"; };
 		4C08E3941E81D1CB00679B4E /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4C1A12EB1E98E267007C24BB /* FirstViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTest.swift; sourceTree = "<group>"; };
+		4C2AD2531E9EDD5E00A66711 /* UIViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerB.swift; sourceTree = "<group>"; };
+		4C738FE51E9EB842006A2988 /* UIButtonB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonB.swift; sourceTree = "<group>"; };
+		4C738FE81E9EBFE7006A2988 /* UITextFieldB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldB.swift; sourceTree = "<group>"; };
+		4C7C6146DA9E5809FBB550A1 /* Pods_roomShareWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomShareWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C89A1241E789B98005F45AA /* roomshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C89A1271E789B98005F45AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C89A1291E789B98005F45AA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -81,9 +114,14 @@
 		4C89A15F1E79E878005F45AA /* StatusLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
 		4C89A1641E79E9B8005F45AA /* db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db.xcdatamodel; sourceTree = "<group>"; };
 		4CD52D771E7DACE50064C13E /* roomshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = roomshare.entitlements; sourceTree = "<group>"; };
-		4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTest.swift; sourceTree = "<group>"; };
 		4CD52D831E7ED7B30064C13E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CE1D7F61E98319F002F1C63 /* FirebaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTests.swift; sourceTree = "<group>"; };
+		4CE600C81E9D655B0019A6F4 /* roomShareWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = roomShareWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE600C91E9D655B0019A6F4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4CE600CC1E9D655B0019A6F4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4CE600CF1E9D655B0019A6F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4CE600D11E9D655B0019A6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE600DB1E9D6FB50019A6F4 /* roomShareWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = roomShareWidget.entitlements; sourceTree = "<group>"; };
 		4D3BF58694AAC9EF721E122F /* Pods-roomshareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareTests/Pods-roomshareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D12F8B33296E16AE366EEC2 /* Pods-roomshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomshare/Pods-roomshare.release.xcconfig"; sourceTree = "<group>"; };
 		86EDE5DBBF503DD5ED43E0EC /* Pods-roomshareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomshareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomshareUITests/Pods-roomshareUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,15 +155,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CE600C51E9D655B0019A6F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE600DA1E9D67660019A6F4 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C738FE71E9EBB3F006A2988 /* UIBerger */ = {
+			isa = PBXGroup;
+			children = (
+				4C738FE51E9EB842006A2988 /* UIButtonB.swift */,
+				4C738FE81E9EBFE7006A2988 /* UITextFieldB.swift */,
+				4C2AD2531E9EDD5E00A66711 /* UIViewControllerB.swift */,
+			);
+			name = UIBerger;
+			sourceTree = "<group>";
+		};
 		4C89A11B1E789B98005F45AA = {
 			isa = PBXGroup;
 			children = (
 				4C89A1261E789B98005F45AA /* roomshare */,
 				4C89A13D1E789B98005F45AA /* roomshareTests */,
 				4C89A1481E789B98005F45AA /* roomshareUITests */,
+				4CE600CB1E9D655B0019A6F4 /* roomShareWidget */,
 				4C89A1251E789B98005F45AA /* Products */,
 				ED31E9428101FE1E141239FB /* Pods */,
 				A3BDE82A1AE70465AAE4B821 /* Frameworks */,
@@ -138,6 +195,7 @@
 				4C89A1241E789B98005F45AA /* roomshare.app */,
 				4C89A13A1E789B98005F45AA /* roomshareTests.xctest */,
 				4C89A1451E789B98005F45AA /* roomshareUITests.xctest */,
+				4CE600C81E9D655B0019A6F4 /* roomShareWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +209,7 @@
 				4C89A12B1E789B98005F45AA /* SecondViewController.swift */,
 				4C08E3941E81D1CB00679B4E /* Utility.swift */,
 				4CE1D7F51E982C92002F1C63 /* CustomUI */,
+				4C738FE71E9EBB3F006A2988 /* UIBerger */,
 				4C89A12D1E789B98005F45AA /* Main.storyboard */,
 				4C89A1321E789B98005F45AA /* LaunchScreen.storyboard */,
 				4C89A1351E789B98005F45AA /* Info.plist */,
@@ -166,8 +225,8 @@
 			children = (
 				4C89A13E1E789B98005F45AA /* roomshareTests.swift */,
 				4C89A1401E789B98005F45AA /* Info.plist */,
-				4CD52D7C1E7E131A0064C13E /* FirstViewControllerTest.swift */,
 				4CE1D7F61E98319F002F1C63 /* FirebaseTests.swift */,
+				4C1A12EB1E98E267007C24BB /* FirstViewControllerTest.swift */,
 			);
 			path = roomshareTests;
 			sourceTree = "<group>";
@@ -191,12 +250,25 @@
 			name = CustomUI;
 			sourceTree = "<group>";
 		};
+		4CE600CB1E9D655B0019A6F4 /* roomShareWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4CE600DB1E9D6FB50019A6F4 /* roomShareWidget.entitlements */,
+				4CE600CC1E9D655B0019A6F4 /* TodayViewController.swift */,
+				4CE600CE1E9D655B0019A6F4 /* MainInterface.storyboard */,
+				4CE600D11E9D655B0019A6F4 /* Info.plist */,
+			);
+			path = roomShareWidget;
+			sourceTree = "<group>";
+		};
 		A3BDE82A1AE70465AAE4B821 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4209E41C3A34F9AA79CEC66D /* Pods_roomshare.framework */,
 				B02B57FBEB829D8C349AD4F5 /* Pods_roomshareTests.framework */,
 				12D1CEB4B26EACCD76086D3B /* Pods_roomshareUITests.framework */,
+				4CE600C91E9D655B0019A6F4 /* NotificationCenter.framework */,
+				4C7C6146DA9E5809FBB550A1 /* Pods_roomShareWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,10 +299,12 @@
 				4C89A1221E789B98005F45AA /* Resources */,
 				8900F4A1DECAAEF68BFFD4FD /* [CP] Embed Pods Frameworks */,
 				959D19091B3BF5B325D85AB6 /* [CP] Copy Pods Resources */,
+				4CE600D81E9D655B0019A6F4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4CE600D31E9D655B0019A6F4 /* PBXTargetDependency */,
 			);
 			name = roomshare;
 			productName = roomshare;
@@ -279,13 +353,30 @@
 			productReference = 4C89A1451E789B98005F45AA /* roomshareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4CE600C71E9D655B0019A6F4 /* roomShareWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE600D51E9D655B0019A6F4 /* Build configuration list for PBXNativeTarget "roomShareWidget" */;
+			buildPhases = (
+				4CE600C41E9D655B0019A6F4 /* Sources */,
+				4CE600C51E9D655B0019A6F4 /* Frameworks */,
+				4CE600C61E9D655B0019A6F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = roomShareWidget;
+			productName = roomShareWidget;
+			productReference = 4CE600C81E9D655B0019A6F4 /* roomShareWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4C89A11C1E789B98005F45AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Daniel Berger";
 				TargetAttributes = {
@@ -294,6 +385,9 @@
 						DevelopmentTeam = DCR3LB83K6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -308,6 +402,16 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4C89A1231E789B98005F45AA;
+					};
+					4CE600C71E9D655B0019A6F4 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DCR3LB83K6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -327,6 +431,7 @@
 				4C89A1231E789B98005F45AA /* roomshare */,
 				4C89A1391E789B98005F45AA /* roomshareTests */,
 				4C89A1441E789B98005F45AA /* roomshareUITests */,
+				4CE600C71E9D655B0019A6F4 /* roomShareWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD52D861E7ED7B30064C13E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE600C61E9D655B0019A6F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE600D01E9D655B0019A6F4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,9 +617,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2AD2541E9EDD5E00A66711 /* UIViewControllerB.swift in Sources */,
 				4C89A12C1E789B98005F45AA /* SecondViewController.swift in Sources */,
+				4C738FE61E9EB842006A2988 /* UIButtonB.swift in Sources */,
 				4C89A15C1E79E113005F45AA /* SwitchButton.swift in Sources */,
 				4C89A1281E789B98005F45AA /* AppDelegate.swift in Sources */,
+				4C738FE91E9EBFE7006A2988 /* UITextFieldB.swift in Sources */,
 				4C89A1651E79E9B8005F45AA /* db.xcdatamodeld in Sources */,
 				4C08E3951E81D1CB00679B4E /* Utility.swift in Sources */,
 				4C89A12A1E789B98005F45AA /* FirstViewController.swift in Sources */,
@@ -524,9 +640,9 @@
 				4CE1D7F71E98319F002F1C63 /* FirebaseTests.swift in Sources */,
 				4C89A13F1E789B98005F45AA /* roomshareTests.swift in Sources */,
 				4C89A15D1E79E113005F45AA /* SwitchButton.swift in Sources */,
-				4CD52D7D1E7E131A0064C13E /* FirstViewControllerTest.swift in Sources */,
 				4C89A1591E78A23B005F45AA /* StatusImage.swift in Sources */,
 				4C89A1661E79E9B8005F45AA /* db.xcdatamodeld in Sources */,
+				4C1A12EC1E98E267007C24BB /* FirstViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +659,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CE600C41E9D655B0019A6F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE600CD1E9D655B0019A6F4 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -555,6 +679,11 @@
 			isa = PBXTargetDependency;
 			target = 4C89A1231E789B98005F45AA /* roomshare */;
 			targetProxy = 4C89A1461E789B98005F45AA /* PBXContainerItemProxy */;
+		};
+		4CE600D31E9D655B0019A6F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CE600C71E9D655B0019A6F4 /* roomShareWidget */;
+			targetProxy = 4CE600D21E9D655B0019A6F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -573,6 +702,14 @@
 				4C89A1331E789B98005F45AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CE600CE1E9D655B0019A6F4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE600CF1E9D655B0019A6F4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -673,10 +810,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48074C86D2297C2B561FCB7B /* Pods-roomshare.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = roomshare/roomshare.entitlements;
 				DEVELOPMENT_TEAM = DCR3LB83K6;
 				INFOPLIST_FILE = roomshare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -688,10 +827,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D12F8B33296E16AE366EEC2 /* Pods-roomshare.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = roomshare/roomshare.entitlements;
 				DEVELOPMENT_TEAM = DCR3LB83K6;
 				INFOPLIST_FILE = roomshare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -757,6 +898,38 @@
 			};
 			name = Release;
 		};
+		4CE600D61E9D655B0019A6F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = roomShareWidget/roomShareWidget.entitlements;
+				DEVELOPMENT_TEAM = DCR3LB83K6;
+				INFOPLIST_FILE = roomShareWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshare.roomShareWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4CE600D71E9D655B0019A6F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = roomShareWidget/roomShareWidget.entitlements;
+				DEVELOPMENT_TEAM = DCR3LB83K6;
+				INFOPLIST_FILE = roomShareWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berger.roomshare.roomshare.roomShareWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -792,6 +965,15 @@
 			buildConfigurations = (
 				4C89A1551E789B98005F45AA /* Debug */,
 				4C89A1561E789B98005F45AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE600D51E9D655B0019A6F4 /* Build configuration list for PBXNativeTarget "roomShareWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE600D61E9D655B0019A6F4 /* Debug */,
+				4CE600D71E9D655B0019A6F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Room-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Room" id="9pv-A4-QxB" customClass="FirstViewController" customModule="roomshare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" title="Room" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FirstViewController" customModule="roomshare" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -21,12 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="mgk-wP-pFF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-TQ-7dR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ha9-OW-L9C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Studio" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="137" y="40" width="101" height="61"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="5mI-G5-z07"/>
-                                    <constraint firstAttribute="width" constant="101" id="BrN-lq-QEx"/>
+                                    <constraint firstAttribute="width" constant="375" id="BrN-lq-QEx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -38,9 +48,17 @@
                                     <constraint firstAttribute="height" constant="160" id="YHp-Tk-XwJ"/>
                                     <constraint firstAttribute="width" constant="160" id="bSh-9W-xPu"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-mI-Bfq" customClass="SwitchButton" customModule="roomshare" customModuleProvider="target">
-                                <rect key="frame" x="16" y="495" width="343" height="20"/>
+                                <rect key="frame" x="16" y="500" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="365-4A-dax"/>
                                     <constraint firstAttribute="height" constant="20" id="NOB-zA-Zvn"/>
@@ -51,7 +69,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-56-Whh">
-                                <rect key="frame" x="130" y="455" width="115" height="21"/>
+                                <rect key="frame" x="130" y="460" width="115" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="nom-Ot-GlR"/>
                                     <constraint firstAttribute="height" constant="21" id="oG8-wS-P0O"/>
@@ -60,43 +78,112 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupied!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L" customClass="StatusLabel" customModule="roomshare" customModuleProvider="target">
-                                <rect key="frame" x="127" y="126" width="120" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L" customClass="StatusLabel" customModule="roomshare" customModuleProvider="target">
+                                <rect key="frame" x="127" y="126" width="120" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="aU5-DU-zgL"/>
-                                    <constraint firstAttribute="height" constant="17" id="gAf-Pg-SAK"/>
+                                    <constraint firstAttribute="height" constant="23" id="gAf-Pg-SAK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHK-In-MEq" userLabel="imageButton">
+                                <rect key="frame" x="108" y="162" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="GS7-ec-Vo6"/>
+                                    <constraint firstAttribute="width" constant="160" id="fel-N1-hfB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchClicked:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dPP-45-ap6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Message..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="18r-cC-CI1" customClass="UITextFieldB" customModule="roomshare" customModuleProvider="target">
+                                <rect key="frame" x="37" y="550" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.39945945462575894" green="0.40341449873096447" blue="0.40341449873096447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Hsl-93-xCT"/>
+                                    <constraint firstAttribute="height" constant="44" id="eby-cm-MW0"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="pencil"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLeftButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftButtonImage" value="twtr-icn-media-play.png"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="messageTextEditingDidBegin:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="pM6-Bg-I7g"/>
+                                    <action selector="messageTextFieldDone:" destination="9pv-A4-QxB" eventType="primaryActionTriggered" id="YM3-ZQ-uhd"/>
+                                    <outletCollection property="gestureRecognizers" destination="DuT-ig-Q9R" appends="YES" id="tk1-2Y-YBN"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gaJ-56-Whh" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8Vv-eq-Vfp"/>
                             <constraint firstItem="dgb-mI-Bfq" firstAttribute="top" secondItem="gaJ-56-Whh" secondAttribute="bottom" constant="19" id="FTk-bP-1Mj"/>
+                            <constraint firstItem="18r-cC-CI1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="I0P-jH-aqf"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="MDI-Je-bWi"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="18r-cC-CI1" secondAttribute="bottom" constant="29" id="MLt-bK-cfB"/>
+                            <constraint firstAttribute="bottom" secondItem="mgk-wP-pFF" secondAttribute="bottom" id="O6b-3T-Cuy"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="dgb-mI-Bfq" secondAttribute="bottom" constant="103" id="Qid-IN-yXb"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="Quh-rN-OOg"/>
                             <constraint firstItem="dgb-mI-Bfq" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="SAB-ko-Jkq"/>
+                            <constraint firstItem="mgk-wP-pFF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="SYK-Q2-paE"/>
+                            <constraint firstItem="lHK-In-MEq" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="SoE-gq-aMS"/>
+                            <constraint firstAttribute="bottom" secondItem="Qoc-TQ-7dR" secondAttribute="bottom" id="UzF-d8-pI1"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="VJh-o0-nZ2"/>
+                            <constraint firstItem="lHK-In-MEq" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="13" id="Wje-0x-2Yc"/>
+                            <constraint firstItem="mgk-wP-pFF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="WzD-9B-kut"/>
+                            <constraint firstAttribute="trailing" secondItem="mgk-wP-pFF" secondAttribute="trailing" id="ZKp-0D-JJn"/>
+                            <constraint firstAttribute="trailing" secondItem="Qoc-TQ-7dR" secondAttribute="trailing" id="c47-ZT-aYw"/>
+                            <constraint firstItem="Qoc-TQ-7dR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cmy-7r-6Hf"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="25" id="gAL-m7-B7B"/>
                             <constraint firstItem="2wt-kT-Xe1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="gCo-C9-f67"/>
-                            <constraint firstItem="2wt-kT-Xe1" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="19" id="ofI-R6-mpl"/>
+                            <constraint firstItem="Qoc-TQ-7dR" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="hV5-3P-RaO"/>
+                            <constraint firstItem="2wt-kT-Xe1" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="13" id="ofI-R6-mpl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Room" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Room" image="second" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="moveViewOnKeyboardShown" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="backgroundBlur" destination="Qoc-TQ-7dR" id="1Ho-3p-wCn"/>
+                        <outlet property="changeStatusLabel" destination="gaJ-56-Whh" id="W5W-HK-aSh"/>
+                        <outlet property="messageTextField" destination="18r-cC-CI1" id="puo-gY-siF"/>
                         <outlet property="statusImage" destination="2wt-kT-Xe1" id="YA9-jT-Cjy"/>
                         <outlet property="statusLabel" destination="A5M-7J-77L" id="9yh-BL-Eje"/>
                         <outlet property="submitButton" destination="dgb-mI-Bfq" id="NkX-xR-SiP"/>
+                        <outlet property="titleLabel" destination="KQZ-1w-vlD" id="UGW-D9-JrI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DuT-ig-Q9R"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Settings-->
+        <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="roomshare" customModuleProvider="target" sceneMemberID="viewController">
@@ -109,11 +196,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trP-5L-eTn">
-                                <rect key="frame" x="142" y="574" width="91" height="22"/>
+                                <rect key="frame" x="142" y="534" width="91" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="91" id="gDS-tM-0i1"/>
                                     <constraint firstAttribute="height" constant="22" id="l3p-yC-4ev"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.80360243060000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -124,11 +212,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="trP-5L-eTn" secondAttribute="bottom" constant="22" id="GVh-61-iQY"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="trP-5L-eTn" secondAttribute="bottom" constant="62" id="GVh-61-iQY"/>
                             <constraint firstItem="trP-5L-eTn" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="dUZ-Hm-4f6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +243,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="360" height="640"/>
         <image name="free" width="256" height="256"/>
+        <image name="pencil" width="32" height="32"/>
+        <image name="second" width="30" height="30"/>
+        <image name="twtr-icn-media-play.png" width="24" height="24"/>
     </resources>
 </document>

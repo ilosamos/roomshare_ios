@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
       // For iOS 10 data message (sent via FCM)
       FIRMessaging.messaging().remoteMessageDelegate = self
     }
-      /*     // iOS 9 support
+      // iOS 9 support
        else if #available(iOS 9, *) {
        UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
        UIApplication.shared.registerForRemoteNotifications()
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
        else if #available(iOS 8, *) {
        UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
        UIApplication.shared.registerForRemoteNotifications()
-       }*/
+       }
       // iOS 7 support
     else {
       application.registerForRemoteNotifications(matching: [.badge, .sound, .alert])
@@ -55,7 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     UserDefaults.standard.setValue(deviceTokenString, forKey: "apn_token")
     print("APN register succesfull, token: \(deviceTokenString)")
     
-    FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: FIRInstanceIDAPNSTokenType.sandbox)
+    //FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: FIRInstanceIDAPNSTokenType.sandbox)
+    FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: FIRInstanceIDAPNSTokenType.prod)
   }
   
   func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
@@ -96,16 +97,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
   func applicationDidEnterBackground(_ application: UIApplication) {
     FIRMessaging.messaging().disconnect()
     print("Disconnected from FCM.")
+    
+    // Force ending editing
+    window?.endEditing(true)
   }
   
   func applicationDidBecomeActive(_ application: UIApplication) {
     FIRMessaging.messaging().disconnect()
     FIRMessaging.messaging().connect { (error) in
       if error != nil {
-        print("Unable to connect with FCM. \(error)")
+        print("Unable to connect with FCM. \(error!.localizedDescription)")
       } else {
-        print("Connected to FCM token: \(FIRInstanceID.instanceID().token()!)")
-        UserDefaults.standard.setValue(FIRInstanceID.instanceID().token()!, forKey: "fcm_token")
+     //   print("Connected to FCM token: \(FIRInstanceID.instanceID().token()!)")
       }
     }
   }
