@@ -42,6 +42,12 @@ import UIKit
     }
   }
   
+  @IBInspectable var leftTintColor: UIColor? {
+    didSet {
+      updateLeftView()
+    }
+  }
+  
   // MARK: - Misc
   @IBInspectable var placeholderColor: UIColor? {
     didSet {
@@ -63,7 +69,7 @@ import UIKit
     let view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
     let button = UIButton(frame: CGRect(x: leftPadding, y: 0, width: 20, height: 20))
     button.setBackgroundImage(image, for: .normal)
-    button.tintColor = tintColor
+    button.tintColor = leftTintColor
     button.addTarget(self, action: #selector(leftButtonPressed), for: .touchUpInside)
     
     view.addSubview(button)

@@ -12,14 +12,14 @@ import FirebaseInstanceID
 import FirebaseAuthUI
 import Firebase
 
-class FirstViewController: UIViewControllerB, FUIAuthDelegate {
+class RoomVC: UIViewControllerB, FUIAuthDelegate {
   @IBOutlet weak var statusImage: StatusImage!
   @IBOutlet weak var submitButton: SwitchButton!
   @IBOutlet weak var statusLabel: StatusLabel!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var changeStatusLabel: UILabel!
   @IBOutlet weak var backgroundBlur: UIVisualEffectView!
-  @IBOutlet weak var messageTextField: UITextFieldB!
+  @IBOutlet weak var messageTextField: DraggableUITextField!
   
   var handle: FIRAuthStateDidChangeListenerHandle?
   var auth: FIRAuth? = FIRAuth.auth()
@@ -28,6 +28,9 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
   var refCurrentUser: FIRDatabaseReference!
   var refUserTokens: FIRDatabaseReference!
   var refRoomName: FIRDatabaseReference!
+  var refMessage: FIRDatabaseReference!
+  
+  var isCurrentUser: Bool = false // True if user is currently in room
   
   var roomStatus: RoomStatus = .Unknown {
     didSet {
@@ -54,6 +57,7 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
     FIRAuth.auth()?.removeStateDidChangeListener(handle!)
     self.refStatus.removeAllObservers()
     self.refCurrentUser.removeAllObservers()
+    self.refMessage.removeAllObservers()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -75,6 +79,7 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
         self.refCurrentUser.observe(.value, with: self.currentUserChanged)
         self.refStatus.observe(.value, with: self.statusChanged)
         self.refRoomName.observe(.value, with: self.roomNameChanged)
+        self.refMessage.observe(.value, with: self.messageChanged)
         self.writeFcmToken()
       }
     }
@@ -100,11 +105,15 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
     // Prepare Views for fade in
     setViewsInvisible()
     
+    // Set TextField delegate
+    messageTextField.delegate = self
+    
     // Set databse references
     refStatus = FIRDatabase.database().reference(withPath: "rooms/room1/status")
     refCurrentUser = FIRDatabase.database().reference(withPath: "rooms/room1/currentUser")
     refRoom = FIRDatabase.database().reference(withPath: "rooms/room1")
     refRoomName = FIRDatabase.database().reference(withPath: "rooms/room1/name")
+    refMessage = FIRDatabase.database().reference(withPath: "rooms/room1/message")
     
     NotificationCenter.default.addObserver(self, selector: #selector(tokenRefreshNotification), name: NSNotification.Name.firInstanceIDTokenRefresh, object: nil)
   }
@@ -123,18 +132,14 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
   
   // Called when status of room is changed in DB
   func statusChanged (snapshot: FIRDataSnapshot) -> Void {
-    print("called status changed")
-    guard let val = snapshot.value else {
-      print("status changed value null")
-      return
-    }
+    guard let val = snapshot.value else { return }
     roomStatus = RoomStatus(rawValue: val as? Int ?? -1)!
     
     //Save status to UserDefaults for widget extension
     let defaults = UserDefaults(suiteName: "group.com.berger.roomshare")
     defaults?.setValue(roomStatus.rawValue, forKey: "roomStatus")
     defaults?.synchronize()
-  }
+}
   
   func roomNameChanged (snapshot: FIRDataSnapshot) -> Void {
     guard let name = snapshot.value as? String else { return }
@@ -148,6 +153,8 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
     }
     
     uidIn = val as? String ?? "unknown"
+    isCurrentUser = user.uid == uidIn
+    print("uid: \(user.uid), uidIn: \(uidIn) isCurrentUSer: \(isCurrentUser)")
   }
   
   // Update Views according to roomStatus
@@ -156,6 +163,8 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
       self.statusImage.roomStatus = self.roomStatus
       self.submitButton.roomStatus = self.roomStatus
       self.statusLabel.roomStatus = self.roomStatus
+      
+      if self.roomStatus == .Free { self.messageTextField.leftImage = #imageLiteral(resourceName: "pencil") }
     }
   }
   
@@ -197,23 +206,27 @@ class FirstViewController: UIViewControllerB, FUIAuthDelegate {
     
     switch roomStatus {
     case .Full,.Free:
-      if user.uid != uidIn && roomStatus == .Full {
+      if !isCurrentUser && roomStatus == .Full {
         Utility.showAlertMessage(title: "Error", message: "Not allowed!", self)
         return
       }
+      if roomStatus == .Full { refMessage.setValue("") }
+      
       refStatus.setValue(roomStatus.rawValue ^ 1)
       refCurrentUser.setValue(user.uid)
     default:
-      refStatus.setValue(RoomStatus.Unknown.rawValue)
+      Utility.showAlertMessage(title: "Error", message: "Couldn't determine status of room. Please try again!", self)
     }
   }
   @IBAction func messageTextEditingDidBegin(_ sender: UITextField) {
-
+    messageTextField.setBottom(animated: true, inView: view)
   }
   @IBAction func messageTextFieldDone(_ sender: UITextFieldB) {
-    messageTextField.resignFirstResponder()
+    messageTextField.setHidden(animated: true, duration: 0.3)
   }
-  
+  @IBAction func messageTextFieldPan(_ sender: UIPanGestureRecognizer) {
+    textFieldPan(sender)
+  }
   deinit {
     NotificationCenter.default.removeObserver(self)
   }

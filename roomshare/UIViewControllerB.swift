@@ -10,6 +10,9 @@ import UIKit
 
 class UIViewControllerB: UIViewController {
   @IBInspectable var moveViewOnKeyboardShown: Bool = true
+    
+  // Rectangle of the keyboard
+  var keyboardRect: CGRect?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,10 +33,11 @@ class UIViewControllerB: UIViewController {
     
     let keyboardFrameValue:NSValue = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
     let keyboardFrame = keyboardFrameValue.cgRectValue
+    keyboardRect = keyboardFrame
         
     UIView.animate(withDuration: duration, delay: 0, options: animationOption, animations: {
       if notification.name == NSNotification.Name.UIKeyboardWillShow {
-        self.view.transform = CGAffineTransform(translationX: 0, y: keyboardFrame.height * -1)
+        self.view.transform = CGAffineTransform(translationX: 0, y: (keyboardFrame.height * -1))
       }
       else if notification.name == NSNotification.Name.UIKeyboardWillHide {
         self.view.transform = .identity

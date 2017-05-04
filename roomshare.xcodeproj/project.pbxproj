@@ -12,10 +12,12 @@
 		4C08E3971E81D1CB00679B4E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08E3941E81D1CB00679B4E /* Utility.swift */; };
 		4C1A12EC1E98E267007C24BB /* FirstViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A12EB1E98E267007C24BB /* FirstViewControllerTest.swift */; };
 		4C2AD2541E9EDD5E00A66711 /* UIViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2AD2531E9EDD5E00A66711 /* UIViewControllerB.swift */; };
+		4C2AD2561EA012DB00A66711 /* RoomVCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2AD2551EA012DB00A66711 /* RoomVCMessage.swift */; };
+		4C2AD2581EA0168C00A66711 /* DraggableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2AD2571EA0168C00A66711 /* DraggableUITextField.swift */; };
 		4C738FE61E9EB842006A2988 /* UIButtonB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C738FE51E9EB842006A2988 /* UIButtonB.swift */; };
 		4C738FE91E9EBFE7006A2988 /* UITextFieldB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C738FE81E9EBFE7006A2988 /* UITextFieldB.swift */; };
 		4C89A1281E789B98005F45AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1271E789B98005F45AA /* AppDelegate.swift */; };
-		4C89A12A1E789B98005F45AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1291E789B98005F45AA /* FirstViewController.swift */; };
+		4C89A12A1E789B98005F45AA /* RoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A1291E789B98005F45AA /* RoomVC.swift */; };
 		4C89A12C1E789B98005F45AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A12B1E789B98005F45AA /* SecondViewController.swift */; };
 		4C89A12F1E789B98005F45AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C89A12D1E789B98005F45AA /* Main.storyboard */; };
 		4C89A1311E789B98005F45AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C89A1301E789B98005F45AA /* Assets.xcassets */; };
@@ -92,12 +94,14 @@
 		4C08E3941E81D1CB00679B4E /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		4C1A12EB1E98E267007C24BB /* FirstViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTest.swift; sourceTree = "<group>"; };
 		4C2AD2531E9EDD5E00A66711 /* UIViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerB.swift; sourceTree = "<group>"; };
+		4C2AD2551EA012DB00A66711 /* RoomVCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomVCMessage.swift; sourceTree = "<group>"; };
+		4C2AD2571EA0168C00A66711 /* DraggableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableUITextField.swift; sourceTree = "<group>"; };
 		4C738FE51E9EB842006A2988 /* UIButtonB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonB.swift; sourceTree = "<group>"; };
 		4C738FE81E9EBFE7006A2988 /* UITextFieldB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldB.swift; sourceTree = "<group>"; };
 		4C7C6146DA9E5809FBB550A1 /* Pods_roomShareWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomShareWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C89A1241E789B98005F45AA /* roomshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C89A1271E789B98005F45AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C89A1291E789B98005F45AA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4C89A1291E789B98005F45AA /* RoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomVC.swift; sourceTree = "<group>"; };
 		4C89A12B1E789B98005F45AA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4C89A12E1E789B98005F45AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C89A1301E789B98005F45AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,7 +209,8 @@
 			children = (
 				4CD52D771E7DACE50064C13E /* roomshare.entitlements */,
 				4C89A1271E789B98005F45AA /* AppDelegate.swift */,
-				4C89A1291E789B98005F45AA /* FirstViewController.swift */,
+				4C89A1291E789B98005F45AA /* RoomVC.swift */,
+				4C2AD2551EA012DB00A66711 /* RoomVCMessage.swift */,
 				4C89A12B1E789B98005F45AA /* SecondViewController.swift */,
 				4C08E3941E81D1CB00679B4E /* Utility.swift */,
 				4CE1D7F51E982C92002F1C63 /* CustomUI */,
@@ -246,6 +251,7 @@
 				4C89A15F1E79E878005F45AA /* StatusLabel.swift */,
 				4C89A1571E78A23B005F45AA /* StatusImage.swift */,
 				4C89A15B1E79E113005F45AA /* SwitchButton.swift */,
+				4C2AD2571EA0168C00A66711 /* DraggableUITextField.swift */,
 			);
 			name = CustomUI;
 			sourceTree = "<group>";
@@ -622,10 +628,12 @@
 				4C738FE61E9EB842006A2988 /* UIButtonB.swift in Sources */,
 				4C89A15C1E79E113005F45AA /* SwitchButton.swift in Sources */,
 				4C89A1281E789B98005F45AA /* AppDelegate.swift in Sources */,
+				4C2AD2581EA0168C00A66711 /* DraggableUITextField.swift in Sources */,
 				4C738FE91E9EBFE7006A2988 /* UITextFieldB.swift in Sources */,
 				4C89A1651E79E9B8005F45AA /* db.xcdatamodeld in Sources */,
 				4C08E3951E81D1CB00679B4E /* Utility.swift in Sources */,
-				4C89A12A1E789B98005F45AA /* FirstViewController.swift in Sources */,
+				4C89A12A1E789B98005F45AA /* RoomVC.swift in Sources */,
+				4C2AD2561EA012DB00A66711 /* RoomVCMessage.swift in Sources */,
 				4C89A1601E79E878005F45AA /* StatusLabel.swift in Sources */,
 				4C89A1581E78A23B005F45AA /* StatusImage.swift in Sources */,
 			);

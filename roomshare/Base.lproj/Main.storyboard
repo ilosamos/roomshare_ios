@@ -12,7 +12,7 @@
         <!--Room-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" title="Room" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FirstViewController" customModule="roomshare" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoomVC" title="Room" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="RoomVC" customModule="roomshare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -98,8 +98,8 @@
                                     <action selector="switchClicked:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dPP-45-ap6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Message..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="18r-cC-CI1" customClass="UITextFieldB" customModule="roomshare" customModuleProvider="target">
-                                <rect key="frame" x="37" y="550" width="300" height="44"/>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Message..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="18r-cC-CI1" customClass="DraggableUITextField" customModule="roomshare" customModuleProvider="target">
+                                <rect key="frame" x="333" y="550" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.39945945462575894" green="0.40341449873096447" blue="0.40341449873096447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -140,7 +140,6 @@
                         <constraints>
                             <constraint firstItem="gaJ-56-Whh" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8Vv-eq-Vfp"/>
                             <constraint firstItem="dgb-mI-Bfq" firstAttribute="top" secondItem="gaJ-56-Whh" secondAttribute="bottom" constant="19" id="FTk-bP-1Mj"/>
-                            <constraint firstItem="18r-cC-CI1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="I0P-jH-aqf"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="MDI-Je-bWi"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="18r-cC-CI1" secondAttribute="bottom" constant="29" id="MLt-bK-cfB"/>
                             <constraint firstAttribute="bottom" secondItem="mgk-wP-pFF" secondAttribute="bottom" id="O6b-3T-Cuy"/>
@@ -149,6 +148,7 @@
                             <constraint firstItem="dgb-mI-Bfq" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="SAB-ko-Jkq"/>
                             <constraint firstItem="mgk-wP-pFF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="SYK-Q2-paE"/>
                             <constraint firstItem="lHK-In-MEq" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="SoE-gq-aMS"/>
+                            <constraint firstAttribute="trailing" secondItem="18r-cC-CI1" secondAttribute="trailing" constant="-258" id="Uhi-O8-2NT"/>
                             <constraint firstAttribute="bottom" secondItem="Qoc-TQ-7dR" secondAttribute="bottom" id="UzF-d8-pI1"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="VJh-o0-nZ2"/>
                             <constraint firstItem="lHK-In-MEq" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="13" id="Wje-0x-2Yc"/>
@@ -179,7 +179,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="DuT-ig-Q9R"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DuT-ig-Q9R">
+                    <connections>
+                        <action selector="messageTextFieldPan:" destination="9pv-A4-QxB" id="XsQ-NN-k6e"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
