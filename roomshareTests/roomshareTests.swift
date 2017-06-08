@@ -11,13 +11,13 @@ import XCTest
 import Firebase
 
 class roomshareTests: XCTestCase {
-  var vc : FirstViewController!
+  var vc : RoomVC!
   var testRoomStatusRef : FIRDatabaseReference!
   var testRoomUserRef : FIRDatabaseReference!
   
   override func setUp() {
     let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-    vc = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+    vc = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as! RoomVC
     
     testRoomStatusRef = FIRDatabase.database().reference(withPath: "rooms/testRoom/status")
     testRoomUserRef = FIRDatabase.database().reference(withPath: "rooms/testRoom/currentUser")
